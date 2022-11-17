@@ -4,38 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <title>Simple Page</title>
   </head>
   <body>
-    <div class="section">
-      <div class="container">
-        <header class="header">
-          <a href="#" class="logo">
-            <img src="Logo.svg" alt="logo" />
-            <p class="logo-text">Managiti</p>
-          </a>
-          <nav class="navigation">
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link" href="#">Careers</a>
-            <a class="nav-link" href="#">Help</a>
-          </nav>
-        </header>
-        <main class="main">
-          <div class="wrap">
-            <h1 class="title">The easiest way to manage projects</h1>
-            <p class="subtitle">
-              From the small stuff to the big picture, organizes the work so
-              teams know what to do and how to get it done.
-            </p>
-            <button type="button" class="button">Get Started</button>
+    <div class="container">
+      <div class="header header--fixed header--top">
+        <a href="#" class="header__logo">
+          <img class="header__img" src="Logo.svg" alt="" />
+          <p class="header__text">Managity</p>
+        </a>
+        <div class="header__navigation">
+          <a class="navigation__link navigation__link--mr" href="#">Features</a>
+          <a class="navigation__link navigation__link--mr" href="#">Pricing</a>
+          <a class="navigation__link navigation__link--mr" href="#">Careers</a>
+          <a class="navigation__link" href="#">Help</a>
+        </div>
+        <label class="menu">
+          <input class="menu__checkbox" type="checkbox" />
+          <span class="burger">
+            <span class="burger__item"></span>
+          </span>
+          <div class="menu__wrapper">
+            <span class="card menu__card">
+              <div class="cross">
+                <img class="cross__img" src="X.svg" alt="X" />
+              </div>
+              <span class="menu__item menu__item--mb"
+                ><a class="link" href="#">How It Work</a></span
+              >
+
+              <span class="menu__item menu__item--mb"
+                ><a class="link" href="#">Our Mission</a></span
+              >
+
+              <span class="menu__item menu__item--mb"
+                ><a class="link" href="#">Our Movement</a></span
+              >
+
+              <span class="menu__item menu__item--mb"
+                ><a class="link" href="#">Ingredient</a></span
+              >
+
+              <span class="menu__item menu__item--mb"
+                ><a class="link" href="#">Transparency Pledge</a></span
+              >
+
+              <span class="menu__item"><a class="link" href="#">Blog</a></span>
+            </span>
           </div>
-        </main>
+        </label>
+      </div>
+      <div class="main">
+        <div class="main__wrapper">
+          <h1 class="main__title">The easiest way to manage projects</h1>
+          <p class="main__subtitle">
+            From the small stuff to the big picture, organizes the work so teams
+            know what to do and how to get it done.
+          </p>
+          <button class="button main__button">Get Started</button>
+        </div>
       </div>
     </div>
-    <footer class="footer">
-      <p class="copy">© 2022 Managity. All rights reserved</p>
-    </footer>
+    <div class="footer">
+      <div class="footer__container">
+        <p class="footer__text">© 2022 Managity. All rights reserved</p>
+      </div>
+    </div>
   </body>
 </html>
